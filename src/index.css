@@ -2,39 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* QuickSplit KBBQ Design System - Korean restaurant aesthetic
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 99%;
+    --foreground: 0 0% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 0 0% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Korean red theme */
+    --primary: 0 74% 42%;        /* Korean red #DC2626 */
+    --primary-dark: 0 77% 30%;   /* Darker red #991B1B */
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 0 74% 42%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status colors */
+    --success: 142 71% 45%;      /* Confirmation green #16A34A */
+    --success-foreground: 0 0% 98%;
+    --warning: 38 92% 50%;       /* Pending/waiting #F59E0B */
+    --warning-foreground: 0 0% 9%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 0 74% 42%;
+
+    /* Custom tokens for restaurant UI */
+    --surface: 0 0% 100%;
+    --surface-elevated: 0 0% 98%;
+    --text-primary: 0 0% 9%;
+    --text-secondary: 215 16% 47%;
+    
+    /* Korean BBQ specific */
+    --korean-red: 0 74% 42%;
+    --korean-gold: 45 93% 58%;
+    --neutral-warm: 28 6% 93%;
+    
+    /* Split visualization */
+    --split-shared: 142 71% 45%;
+    --split-individual: 217 91% 60%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(0 74% 42%), hsl(0 77% 30%));
+    --gradient-surface: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
+    
+    /* Shadows */
+    --shadow-card: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);
+    --shadow-elevated: 0 10px 15px -3px hsl(0 0% 0% / 0.1), 0 4px 6px -4px hsl(0 0% 0% / 0.1);
+    --shadow-glow: 0 0 0 1px hsl(0 74% 42% / 0.1), 0 4px 12px hsl(0 74% 42% / 0.15);
 
     --radius: 0.5rem;
 
